@@ -65,7 +65,7 @@ export default function Search() {
         SEARCH
       </button>
       <div className="w-[25%] rounded-xl h-1 bg-black"></div>
-      <Link to="/" className="w-[30%]">
+      <Link to="/layout" className="w-[30%]">
         <button className="bg-transparent text-white font-bold font-sans outline outline-1 outline-red-600 transition-all ease-linear duration-300 hover:text-red-400 px-6 py-2 rounded-xl w-full">
           Go Back
         </button>

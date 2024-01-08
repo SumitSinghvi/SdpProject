@@ -132,7 +132,7 @@ const DynamicForm = () => {
           Submit
         </button>
       </form>
-      <Link to="/" className="w-[30%]">
+      <Link to="/layout" className="w-[30%]">
         <button className="bg-blue-800 text-white font-bold font-sans hover:bg-yellow-400 transition-all ease-linear duration-300 px-6 py-3 rounded-xl w-full">
           Go Back
         </button>

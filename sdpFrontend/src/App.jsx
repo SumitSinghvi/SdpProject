@@ -1,18 +1,24 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Form from "./pages/Form";
-import Search from "./pages/Search";
+import Home from "./components/Home";
+import Form from "./components/Form";
+import Layout from "./components/Layout";
+import Search from "./components/Search";
+import Category from "./components/Category";
+import { useState } from "react";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/form' element={<Form />} />
-        <Route path='/' element={<Home />} />
-        <Route path='/search' element={<Search />} />
-      </Routes>
-    </BrowserRouter>
-  );
+  const [category, setCategory] = useState(['Category']);
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path='/form' element={<Form />} />
+          <Route path='/category' element={<Category category={category} setCategory={setCategory} />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/layout' element={<Layout />} />
+          <Route path='/search' element={<Search />} />
+        </Routes>
+      </BrowserRouter>
+    );
 }
 
 export default App;
